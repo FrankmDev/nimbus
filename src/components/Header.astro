@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+---
+
+<header class="flex items-center justify-between mt-8 m-16 w-10/12">
+  <!-- <Image src={Logo} alt="FrankDev Logo" class="w-48 h-auto" /> -->
+  <nav class="flex items-center justify-center gap-20">
+    <ul class="flex items-center justify-center gap-20">
+      <li><a href="#" class="nav-item">Home</a></li>
+      <li><a href="#" class="nav-item">Blog</a></li>
+      <li><a href="#" class="nav-item">Entrenamiento</a></li>
+      <li><a href="#" class="nav-item">Nutrición</a></li>
+    </ul>
+    <button>Contacto</button>
+  </nav>
+</header>
+
+<style>
+  .nav-item {
+    font-size: 1.1rem;
+    position: relative;
+  }
+
+  .nav-item::before {
+    content: "";
+    width: 0;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -0.25rem;
+    left: 50%;
+    transition:
+      width 0.35s,
+      left 0.35s;
+  }
+
+  .nav-item:hover::before {
+    width: 100%;
+    left: 0;
+  }
+</style>
