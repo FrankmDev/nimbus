@@ -10,13 +10,33 @@ import Logo from "../../../public/logo.png";
   <nav class="flex items-center">
     <a href="#" class="nav-link">Home</a>
     <a href="#" class="nav-link">Blog</a>
-    <a href="#" class="nav-link">Entrenamiento</a>
-    <a href="#" class="nav-link">Nutrición</a>
+    <a href="#" class="nav-link">¿Quiénes somos?</a>
+    <a href="#" class="nav-link">Contacto</a>
   </nav>
 </header>
 
 <style>
   .nav-link {
     margin-right: 2.5rem;
+    position: relative;
+  }
+
+  .nav-link::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -0.25rem;
+    left: 50%;
+    transition:
+      width 0.35s,
+      left 0.35s;
+  }
+
+  .nav-link:hover::before {
+    width: 100%;
+    left: 0;
   }
 </style>
