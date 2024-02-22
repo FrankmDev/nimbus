@@ -1,13 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import Header from "./Header.astro";
-import ImgCbum from "../../../public/cbum.jpg";
+import ImgCbum from "../../../public/cbum.png";
 ---
 
-<section id="hero" class="flex flex-col w-9/12">
+<section id="hero" class="flex flex-col max-w-[1350px]">
   <Header />
-  <section class="grid gap-6 max-w-[1350px]">
-    <h1 class="hero-text bg-transparent text-9xl leading-none">
+  <section class="flex items-center justify-between gap-5">
+    <h1 class="hero-text bg-transparent text-7xl leading-none text-balance">
       Bienvenido a tu cambio fisico
     </h1>
     <div class="flex items-center justify-center">
@@ -19,12 +19,3 @@ import ImgCbum from "../../../public/cbum.jpg";
     </div>
   </section>
 </section>
-
-<style>
-  #hero {
-    grid-template-columns: 1fr 1fr;
-  }
-  .hero-text {
-    text-wrap: balance;
-  }
-</style>
