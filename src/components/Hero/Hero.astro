@@ -1,21 +1,25 @@
 ---
 import { Image } from "astro:assets";
 import Header from "./Header.astro";
-import ImgCbum from "../../../public/cbum.png";
+import HeroImg from "../../../public/HeroImg.webp";
 ---
 
-<section id="hero" class="flex flex-col max-w-[1350px]">
+<section id="hero" class="section flex flex-col max-w-screen-xl mx-auto px-4">
   <Header />
-  <section class="flex items-center justify-between gap-5">
-    <h1 class="hero-text bg-transparent text-7xl leading-none text-balance">
-      Bienvenido a tu cambio fisico
-    </h1>
-    <div class="flex items-center justify-center">
-      <Image
-        src={ImgCbum}
-        alt="Hero Image"
-        class="hero-img h-full object-cover"
-      />
+  <div class="flex items-center h-full">
+    <div class="mr-10">
+      <h1 class="text-7xl font-bold text-balance">
+        Lorem ipsum dolor sit amet consectetur
+      </h1>
+      <h2 class="text-balance">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sequi
+      </h2>
     </div>
-  </section>
+
+    <Image
+      src={HeroImg}
+      alt="Hero Image"
+      class="rounded-3xl object-cover overflow-hidden shadow-lg"
+    />
+  </div>
 </section>
