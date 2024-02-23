@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Header from "./Header.astro";
 import HeroImg from "../../../public/HeroImg.webp";
+import Cta from "../Cta";
 ---
 
 <section
@@ -10,13 +11,14 @@ import HeroImg from "../../../public/HeroImg.webp";
 >
   <Header />
   <div class="flex items-center">
-    <div class="mr-10 flex flex-col justify-start gap-6">
+    <div class="mr-10 flex flex-col justify-start gap-6 pl-8">
       <h1 class="text-7xl font-bold text-balance leading-tight">
         Te ayudamos en tu cambio físico
       </h1>
       <h2 class="">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sequi
       </h2>
+      <Cta text="Contacto" />
     </div>
 
     <Image
