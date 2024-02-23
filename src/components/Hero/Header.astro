@@ -20,16 +20,18 @@ import Logo from "../../../public/logo.png";
   .nav-link {
     margin-right: 2.5rem;
     position: relative;
+    z-index: 1;
   }
 
   .nav-link::before {
     content: "";
     width: 0;
-    height: 2px;
-    border-radius: 4px;
-    background-color: #fff;
+    height: 12px;
+    border-radius: 2px;
+    background-color: #2f185c;
     position: absolute;
-    bottom: -0.25rem;
+    z-index: -1;
+    bottom: -0.05rem;
     left: 50%;
     transition:
       width 0.35s,
@@ -60,7 +62,7 @@ import Logo from "../../../public/logo.png";
   }
 
   button:hover {
-    background: #3d0186;
+    background: #3c0a78a9;
     box-shadow: 0 0 15px 5px #5919d851;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
