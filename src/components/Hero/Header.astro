@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "../../../public/logo.png";
+import Logo from "../../../public/logo.webp";
 import Cta from "../Cta";
 ---
 
 <header class="flex items-center justify-between px-5 py-3 my-3">
   <div class="flex items-center">
-    <Image src={Logo} alt="My Fitness Blog Logo" class="w-10 h-12 mr-4" />
+    <Image src={Logo} alt="My Fitness Blog Logo" class="w-28" />
   </div>
-  <nav class="flex items-center">
+  <nav class="flex items-center gap-16">
     <a href="#" class="nav-link">Home</a>
     <a href="#" class="nav-link">Blog</a>
     <a href="#" class="nav-link">Calculadoras</a>
@@ -19,7 +19,6 @@ import Cta from "../Cta";
 
 <style>
   .nav-link {
-    margin-right: 2.5rem;
     position: relative;
     z-index: 1;
   }

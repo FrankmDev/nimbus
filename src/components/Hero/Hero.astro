@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Header from "./Header.astro";
 import HeroImg from "../../../public/HeroImg.webp";
 import Cta from "../Cta";
+import Card from "../Card.astro";
 ---
 
 <section
@@ -10,14 +11,12 @@ import Cta from "../Cta";
   class="flex flex-col justify-between h-[80vh] w-[75vw] max-w-[1300px] mx-auto px-4"
 >
   <Header />
-  <div class="flex items-center">
-    <div class="mr-10 flex flex-col justify-start gap-5 pl-8">
-      <h1 class="text-8xl font-bold text-balance leading-tight">
-        Despierta tu<span class="highlight">Potencial</span>
+  <div class="flex items-center justify-center">
+    <div class="mr-10 flex flex-col pl-8 gap-3">
+      <h1 class="text-8xl font-bold text-balance">
+        Despierta tu<span class="highlight"> Potencial</span>
       </h1>
-      <h2 class="text-lg mb-5">
-        Entrenamiento y Nutrición: Optimiza tu Salud y Bienestar
-      </h2>
+      <h2 class="text-lg mb-8">Entrenamiento y Nutrición: Optimiza tu Salud</h2>
       <Cta text="Contacto" />
     </div>
 
