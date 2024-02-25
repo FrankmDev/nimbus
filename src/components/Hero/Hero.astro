@@ -3,7 +3,6 @@ import { Image } from "astro:assets";
 import Header from "./Header.astro";
 import HeroImg from "../../../public/HeroImg.webp";
 import Cta from "../Cta";
-import Card from "../Card.astro";
 ---
 
 <section
@@ -16,7 +15,11 @@ import Card from "../Card.astro";
       <h1 class="text-8xl font-bold text-balance">
         Despierta tu<span class="highlight"> Potencial</span>
       </h1>
-      <h2 class="text-lg mb-8">Entrenamiento y Nutrición: Optimiza tu Salud</h2>
+      <h2 class="text-lg mb-8">
+        <span class="highlight">Entrenamiento</span> y <span class="highlight"
+          >Nutrición</span
+        > : Optimiza tu Salud
+      </h2>
       <Cta text="Contacto" />
     </div>
 
@@ -27,5 +30,3 @@ import Card from "../Card.astro";
     />
   </div>
 </section>
-
-<style></style>

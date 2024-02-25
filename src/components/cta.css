@@ -2,7 +2,7 @@ button {
   position: relative;
   padding: 10px 20px;
   border-radius: 12px;
-  border: 2px solid #542ba4;
+  border: 2px solid var(--main-color);
   font-size: 16px;
   width: 9rem;
   text-transform: uppercase;
@@ -17,7 +17,7 @@ button {
 }
 
 button:hover {
-  background: #3f0572;
+  background: #3a1d75;
   box-shadow: 0 0 15px 5px #5919d851;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
