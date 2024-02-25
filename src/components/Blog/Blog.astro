@@ -1,8 +1,15 @@
 ---
 import Card from "../Card.astro";
+const allPosts = await Astro.glob("../../pages/posts/*.md");
 ---
 
-<section>
+<section class="flex">
   <h2>Ultimos posts</h2>
-  <Card />
+  {
+    allPosts.map((post) => (
+      <li>
+        <a href="../../pages/posts/post-1.md">Post 1</a>
+      </li>
+    ))
+  }
 </section>
