@@ -1,5 +1,6 @@
 ---
 const { title, img, description } = Astro.props;
+import "../styles/global.css";
 ---
 
 <div class="container">
@@ -82,8 +83,7 @@ const { title, img, description } = Astro.props;
   }
 
   .tag-blue {
-    background: #56ccf2;
-    background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+    background: var(--main-color);
     color: #fafafa;
   }
 
