@@ -6,7 +6,7 @@ const allPosts = await Astro.glob("../../pages/posts/*.md");
 
 <section id="blog" class="section flex flex-col items-center justify-center">
   <h2 class="highlight">Posts recientes</h2>
-  <section class="posts grid grid-cols-3 gap-10 w-[85%]">
+  <section class="posts grid grid-cols-3 gap-6 w-[85%]">
     {allPosts.map((post, index) => <Card {post} {index} />)}
   </section>
 </section>

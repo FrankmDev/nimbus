@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Primer articulo"
-date: 2022-07-01
-description: "Esto es un post sobre entrenamiento"
+title: "Mejor ejercicio de pecho"
+date: 2024-02-28
+description: "Aprende a maximizar tus entrenamientos con estos consejos sobre fuerza"
 author: "Astro Learner"
 image:
   url: "https://wallpapercave.com/wp/wp2613880.jpg"
@@ -11,7 +11,7 @@ tags: ["astro", "blogging", "learning in public"]
 category: "Ejercicio"
 ---
 
-# Rutina de Entrenamiento Semanal
+# Mejor ejercicio de pecho
 
 ## Lunes
 
