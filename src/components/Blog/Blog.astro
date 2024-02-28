@@ -3,7 +3,7 @@ import Card from "../Card.astro";
 const allPosts = await Astro.glob("../../pages/posts/*.md");
 ---
 
-<section class="flex">
+<section id="blog" class="section flex">
   <h2>Ultimos posts</h2>
   {allPosts.map((post) => <Card title={post.title} />)}
 </section>

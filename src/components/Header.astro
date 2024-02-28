@@ -1,18 +1,21 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "../../../public/logo.webp";
-import Cta from "../Cta";
+import Logo from "../../public/logo.webp";
+import Cta from "./Cta";
 ---
 
-<header class="flex items-center justify-between px-5 py-3 my-3">
-  <div class="flex items-center">
+<header
+  id="header"
+  class="section flex items-center justify-between px-5 py-3 my-3"
+>
+  <a href="/" class="flex items-center cursor-pointer">
     <Image src={Logo} alt="My Fitness Blog Logo" class="w-28" />
-  </div>
+  </a>
   <nav class="flex items-center gap-16">
-    <a href="#" class="nav-link">Home</a>
+    <a href="/" class="nav-link">Home</a>
     <a href="#" class="nav-link">Blog</a>
     <a href="#" class="nav-link">Calculadoras</a>
-    <a href="#" class="nav-link">Contacto</a>
+    <a href="/about" class="nav-link">About</a>
   </nav>
   <Cta text="Hazte miembro" />
 </header>

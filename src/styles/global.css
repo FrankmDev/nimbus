@@ -1,18 +1,6 @@
 :root {
   --main-color: #542ba4;
 }
-main {
-  height: 100vh;
-  max-height: 100vh;
-  width: 100%;
-  background-image: url("/background.webp");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +11,7 @@ html {
   color: #f9f9f9;
   color-scheme: dark light;
 }
+
 @font-face {
   font-family: "Poppins";
   src: url("/Poppins/Poppins-SemiBold.ttf");
@@ -31,10 +20,15 @@ html {
   font-display: swap;
 }
 body {
-  background-color: black;
+  background-color: rgb(7, 7, 7);
   letter-spacing: 0.1rem;
   gap: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+a,
 button {
   cursor: pointer;
 }
