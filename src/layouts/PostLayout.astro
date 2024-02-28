@@ -1,13 +1,18 @@
 ---
+import "../styles/global.css";
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
+
+const { title, description, date, author, image } = frontmatter;
 ---
 
-<Layout title="About">
-  <h1>{frontmatter.title}</h1>
-  <p>{frontmatter.pubDate.toString().slice(0, 10)}</p>
-  <p><em>{frontmatter.description}</em></p>
-  <p>Escrito por: {frontmatter.author}</p>
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-  <slot />
+<Layout {title}>
+  <section class="post-content">
+    <h1 class="highlight">{title}</h1>
+    <p>by <a href={`/author/${author}`}>{author}</a> · {date}</p>
+    <div class="content">
+      <slot />
+    </div>
+    <aside class="sidebar"></aside>
+  </section>
 </Layout>
