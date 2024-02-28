@@ -4,8 +4,8 @@ import "../styles/global.css";
 const { title, image, description, post, index } = Astro.props;
 ---
 
-<a href={`/posts/post-${index + 1}/`}>
-  <div class="container">
+<div class="container">
+  <a class="card-link" href={`/posts/post-${index + 1}/`}>
     <article class="card">
       <figure class="card__header">
         <img
@@ -35,14 +35,24 @@ const { title, image, description, post, index } = Astro.props;
         </div>
       </div>
     </article>
-  </div>
-</a>
+  </a>
+</div>
 <style>
+  .card-link {
+    transition: all 0.4s;
+  }
+
+  .card-link:hover,
+  .card-link:active {
+    transform: translateY(-0.5rem);
+  }
+
   .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-block: 2rem;
+    box-shadow: 0 3.2rem 6.4rem #15014044;
   }
   .card__header {
     height: 50%;
@@ -57,7 +67,7 @@ const { title, image, description, post, index } = Astro.props;
   .card {
     display: flex;
     flex-direction: column;
-    aspect-ratio: 1/1;
+    height: 25rem;
     overflow: hidden;
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;

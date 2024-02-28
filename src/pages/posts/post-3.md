@@ -1,11 +1,11 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Tercer articulo"
-pubDate: 2022-07-01
+date: 2022-07-01
 description: "Esto es un post sobre salud"
 author: "Astro Learner"
 image:
-  url: "https://media.licdn.com/dms/image/C5612AQGRRljsFUbxqQ/article-cover_image-shrink_600_2000/0/1574227348765?e=2147483647&v=beta&t=AIfQlrgSqDuOVwBRH9iYRKItub05akI3-GOb3wqjgAs"
+  url: "https://www.aseguravida.com/blog/img/EstadoSalud.png"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---

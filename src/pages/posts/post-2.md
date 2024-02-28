@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: "Segundo articulo"
-pubDate: 2022-07-01
+date: 2022-07-01
 description: "Esto es un post sobre nutricion"
 author: "Astro Learner"
 image:
