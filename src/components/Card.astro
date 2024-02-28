@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import "../styles/global.css";
-const { title, image, description, post, index } = Astro.props;
+const { title, image, description, post, index, category } = Astro.props;
 ---
 
 <div class="container">
@@ -16,7 +16,10 @@ const { title, image, description, post, index } = Astro.props;
         />
       </figure>
       <div class="card__body">
-        <span class="tag tag-blue">Technology</span>
+        <span
+          class=`tag tag-${post.frontmatter.category === 'Ejercicio' ? 'ex' : (post.frontmatter.category === 'Nutrición' ? 'nut' : 'sal')}`
+          >{post.frontmatter.category}</span
+        >
         <h4>{post.frontmatter.title}</h4>
         <p>
           {post.frontmatter.description}
@@ -52,7 +55,10 @@ const { title, image, description, post, index } = Astro.props;
     flex-wrap: wrap;
     justify-content: center;
     margin-block: 2rem;
-    box-shadow: 0 3.2rem 6.4rem #15014044;
+    border-radius: 1em;
+    -webkit-box-shadow: 0px 0px 32px 1px rgba(83, 43, 164, 0.155);
+    -moz-box-shadow: 0px 0px 32px 1px rgba(83, 43, 164, 0.163);
+    box-shadow: 0px 0px 32px 1px rgba(83, 43, 164, 0.185);
   }
   .card__header {
     height: 50%;
@@ -88,21 +94,17 @@ const { title, image, description, post, index } = Astro.props;
     font-size: 45%;
   }
 
-  .tag-blue {
+  .tag-ex {
     background: var(--main-color);
     color: #fafafa;
   }
 
-  .tag-brown {
-    background: #d1913c;
-    background: linear-gradient(to bottom, #ffd194, #d1913c);
-    color: #fafafa;
+  .tag-nut {
+    background: #205d21;
   }
 
-  .tag-red {
-    background: #cb2d3e;
-    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-    color: #fafafa;
+  .tag-sal {
+    background: #101657;
   }
 
   .card__body h4 {

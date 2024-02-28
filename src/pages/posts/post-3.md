@@ -8,6 +8,7 @@ image:
   url: "https://www.aseguravida.com/blog/img/EstadoSalud.png"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
+category: "Salud"
 ---
 
 # Hábitos para una Vida Saludable

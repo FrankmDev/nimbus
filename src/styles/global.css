@@ -19,6 +19,14 @@ html {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("/Barlow_Semi_Condensed/BarlowSemiCondensed-ExtraBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: rgb(7, 7, 7);
   letter-spacing: 0.1rem;
@@ -43,7 +51,7 @@ button {
 .highlight {
   font-family: "Barlow Semi Condensed", sans-serif;
   color: var(--main-color);
-  font-weight: 800;
+  font-weight: 900;
   font-size: 125%;
 }
 #blog {

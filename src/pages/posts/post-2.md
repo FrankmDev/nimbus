@@ -8,6 +8,7 @@ image:
   url: "https://imgcom.masterd.es/49/blog/2023/02/42534.jpeg"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
+category: "Nutrición"
 ---
 
 # Plan de Nutrición Diario
