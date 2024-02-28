@@ -1,29 +1,35 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "My First Blog Post"
+title: "Primer articulo"
 date: 2022-07-01
-description: "This is the first post of my new Astro blog."
+description: "Esto es un post sobre entrenamiento"
 author: "Astro Learner"
 image:
-  url: "https://docs.astro.build/assets/full-logo-light.png"
+  url: "https://wallpapercave.com/wp/wp2613880.jpg"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# My First Blog Post
+# Rutina de Entrenamiento Semanal
 
-Published on: 2022-07-01
+## Lunes
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+- **Ejercicio:** Levantamiento de pesas
+- **Series:** 4
+- **Repeticiones:** 10
+- **Descanso:** 1 minuto entre series
 
-## What I've accomplished
+## Miércoles
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+- **Ejercicio:** Cardio
+- **Actividad:** Correr en la cinta
+- **Duración:** 30 minutos
+- **Intensidad:** Moderada
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+## Viernes
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+- **Ejercicio:** Entrenamiento de cuerpo completo
+- **Circuito:** Squats, Push-ups, Pull-ups, Plank
+- **Series:** 3
+- **Repeticiones:** 12-15
+- **Descanso:** 30 segundos entre ejercicios

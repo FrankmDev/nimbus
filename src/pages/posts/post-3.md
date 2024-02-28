@@ -1,29 +1,20 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "My First Blog Post"
+title: "Tercer articulo"
 pubDate: 2022-07-01
-description: "This is the first post of my new Astro blog."
+description: "Esto es un post sobre salud"
 author: "Astro Learner"
 image:
-  url: "https://docs.astro.build/assets/full-logo-light.png"
+  url: "https://media.licdn.com/dms/image/C5612AQGRRljsFUbxqQ/article-cover_image-shrink_600_2000/0/1574227348765?e=2147483647&v=beta&t=AIfQlrgSqDuOVwBRH9iYRKItub05akI3-GOb3wqjgAs"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# My First Blog Post
+# Hábitos para una Vida Saludable
 
-Published on: 2022-07-01
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## What I've accomplished
-
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+- **Ejercicio Regular:** Realizar al menos 30 minutos de actividad física al día.
+- **Alimentación Balanceada:** Consumir una variedad de alimentos nutritivos, incluyendo frutas, verduras, proteínas magras y granos enteros.
+- **Descanso Adecuado:** Dormir entre 7-9 horas cada noche para permitir la recuperación del cuerpo y la mente.
+- **Manejo del Estrés:** Practicar técnicas de relajación como la meditación y el yoga para reducir el estrés y la ansiedad.
+- **Hidratación:** Beber suficiente agua durante todo el día para mantenerse hidratado y apoyar las funciones corporales.
+- **Conexiones Sociales:** Mantener relaciones sociales saludables y cultivar una red de apoyo emocional.

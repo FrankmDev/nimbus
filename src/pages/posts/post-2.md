@@ -1,29 +1,30 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "My First Blog Post"
+title: "Segundo articulo"
 pubDate: 2022-07-01
-description: "This is the first post of my new Astro blog."
+description: "Esto es un post sobre nutricion"
 author: "Astro Learner"
 image:
-  url: "https://docs.astro.build/assets/full-logo-light.png"
+  url: "https://imgcom.masterd.es/49/blog/2023/02/42534.jpeg"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# My First Blog Post
+# Plan de Nutrición Diario
 
-Published on: 2022-07-01
+## Desayuno
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+- **Alimentos:** Avena con frutas frescas y nueces
+- **Bebida:** Té verde
 
-## What I've accomplished
+## Almuerzo
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+- **Plato principal:** Ensalada de espinacas, tomate, aguacate y pollo a la parrilla
+- **Acompañamiento:** Arroz integral
+- **Bebida:** Agua con limón
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+## Cena
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+- **Plato principal:** Salmón al horno con espárragos y quinoa
+- **Ensalada:** Lechuga, pepino y vinagreta de mostaza y miel
+- **Bebida:** Infusión de hierbas sin cafeína

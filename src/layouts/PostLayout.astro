@@ -2,14 +2,23 @@
 import "../styles/global.css";
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
+import { Image } from "astro:assets";
 
 const { title, description, date, author, image } = frontmatter;
+console.log(frontmatter);
 ---
 
 <Layout {title}>
   <section class="post-content">
     <h1 class="highlight">{title}</h1>
     <p>by <a href={`/author/${author}`}>{author}</a> · {date}</p>
+    <Image
+      src={image.url}
+      alt={image.alt}
+      width="1200"
+      height="1200"
+      format="webp"
+    />
     <div class="content">
       <slot />
     </div>

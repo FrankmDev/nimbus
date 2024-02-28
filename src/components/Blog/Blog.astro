@@ -2,11 +2,12 @@
 import "../../styles/global.css";
 import Card from "../Card.astro";
 const allPosts = await Astro.glob("../../pages/posts/*.md");
+console.log(allPosts);
 ---
 
 <section id="blog" class="section flex flex-col items-center justify-center">
   <h2 class="text-2xl">Ultimos posts</h2>
   <section class="posts flex gap-10">
-    {allPosts.map((post) => <Card />)}
+    {allPosts.map((post, index) => <Card {post} {index} />)}
   </section>
 </section>
