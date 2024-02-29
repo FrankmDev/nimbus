@@ -4,9 +4,7 @@ title: "Mejor ejercicio de pecho"
 date: 2024-02-28
 description: "Aprende a maximizar tus entrenamientos con estos consejos sobre fuerza"
 author: "Astro Learner"
-image:
-  url: "https://wallpapercave.com/wp/wp2613880.jpg"
-  alt: "The full Astro logo."
+image: "/public/post-images/example.jpg"
 tags: ["astro", "blogging", "learning in public"]
 category: "Ejercicio"
 ---
