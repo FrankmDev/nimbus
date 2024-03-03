@@ -2,12 +2,35 @@
 import "../../styles/global.css";
 import Card from "../Card.astro";
 const allPosts = await Astro.glob("../../pages/posts/*.md");
+
+const recentPosts = allPosts.slice(allPosts.length - 3);
+const ejercicioPosts = allPosts.filter(
+  (post) => post.frontmatter.category === "Ejercicio"
+);
+const nutricionPosts = allPosts.filter(
+  (post) => post.frontmatter.category === "Nutrición"
+);
+const saludPosts = allPosts.filter(
+  (post) => post.frontmatter.category === "Salud"
+);
 ---
 
 <section id="blog" class="section flex flex-col items-center justify-center">
   <h2 class="highlight">Posts recientes</h2>
   <section class="posts grid grid-cols-3 gap-6 w-[85%]">
-    {allPosts.map((post, index) => <Card {post} {index} />)}
+    {recentPosts.map((post, index) => <Card {post} {index} />)}
+  </section>
+  <h2>Sobre <span class="highlight">Ejercicio</span></h2>
+  <section class="posts grid grid-cols-3 gap-6 w-[85%]">
+    {ejercicioPosts.map((post, index) => <Card {post} {index} />)}
+  </section>
+  <h2>Sobre <span class="highlight">Nutrición</span></h2>
+  <section class="posts grid grid-cols-3 gap-6 w-[85%]">
+    {nutricionPosts.map((post, index) => <Card {post} {index} />)}
+  </section>
+  <h2>Sobre <span class="highlight">Salud</span></h2>
+  <section class="posts grid grid-cols-3 gap-6 w-[85%]">
+    {saludPosts.map((post, index) => <Card {post} {index} />)}
   </section>
 </section>
 

@@ -1,34 +1,27 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Primer articulo"
-date: 2022-07-01
-description: "Esto es un post sobre entrenamiento"
-author: "Astro Learner"
-image: "https://wallpapercave.com/wp/wp2613880.jpg"
-tags: ["astro", "blogging", "learning in public"]
+title: "Mejores ejercicios para quemar grasa"
+date: 2024-03-03
+description: "Descubre los ejercicios más efectivos para perder grasa rápidamente"
+author: "Fitness Guru"
+image: "/public/post-images/burning-fat.avif"
+tags: ["entrenamiento", "quemar grasa", "ejercicios"]
 category: "Ejercicio"
 ---
 
-# Rutina de Entrenamiento Semanal
+# Mejores ejercicios para quemar grasa
 
-## Lunes
+## Rutina de ejercicios
 
-- **Ejercicio:** Levantamiento de pesas
-- **Series:** 4
-- **Repeticiones:** 10
-- **Descanso:** 1 minuto entre series
+- **Ejercicio:** HIIT (High Intensity Interval Training)
+- **Duración:** 20 minutos
+- **Intensidad:** Alta
+- **Frecuencia:** 3 veces por semana
 
-## Miércoles
+## Alimentación complementaria
 
-- **Ejercicio:** Cardio
-- **Actividad:** Correr en la cinta
-- **Duración:** 30 minutos
-- **Intensidad:** Moderada
+Para maximizar los resultados de tus entrenamientos, es importante mantener una dieta equilibrada y rica en nutrientes. Algunos alimentos recomendados son:
 
-## Viernes
-
-- **Ejercicio:** Entrenamiento de cuerpo completo
-- **Circuito:** Squats, Push-ups, Pull-ups, Plank
-- **Series:** 3
-- **Repeticiones:** 12-15
-- **Descanso:** 30 segundos entre ejercicios
+- Proteínas magras como pollo, pescado y tofu.
+- Vegetales de hojas verdes.
+- Grasas saludables como aguacates y nueces.

@@ -12,9 +12,9 @@ const postDate = new Date(date);
     <header
       class="post-header w-full flex flex-col items-center justify-center"
     >
-      <h1 class="">{title}</h1>
+      <h1>{title}</h1>
       <p>
-        by <a href={`/author/${author}`}>{author}</a> · {
+        por <a href={`/author/${author}`}>{author}</a> · {
           postDate.toLocaleDateString("es-ES", {
             year: "numeric",
             month: "long",
@@ -33,10 +33,15 @@ const postDate = new Date(date);
   </section>
 </Layout>
 <style>
+  .post-content {
+    width: 55%;
+    max-width: 1300px;
+  }
   .post-header {
     background-color: #5908cb;
     border-radius: 1rem;
     padding: 3rem;
+    width: 100%;
   }
   .post-header h1 {
     font-size: 3rem;
