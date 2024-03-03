@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Beneficios de una dieta balanceada"
+title: "Principales beneficios de una dieta balanceada"
 date: 2024-03-02
-description: "Conoce los beneficios de mantener una dieta equilibrada para tu salud y bienestar"
+description: "Conoce los beneficios de mantener una dieta equilibrada para tu salud y bienestar a largo plazo."
 author: "Nutrition Expert"
 image: "/public/post-images/balanced-diet.avif"
 tags: ["nutrición", "dieta balanceada", "salud"]

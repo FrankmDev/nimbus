@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Consejos para un sueño reparador"
+title: "Tres consejos para tener un sueño reparador"
 date: 2024-02-28
 description: "Aprende cómo mejorar la calidad de tu sueño y despertar sintiéndote más descansado y rejuvenecido"
 author: "Sleep Expert"

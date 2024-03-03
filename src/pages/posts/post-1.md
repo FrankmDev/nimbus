@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Mejor ejercicio de pecho"
+title: "¿Cuáles son los mejores ejercicios de pecho?"
 date: 2024-02-28
-description: "Aprende a maximizar tus entrenamientos con estos consejos sobre fuerza"
+description: "Mejores ejercicios para incluir en un tu entrenamiento si quieres mejorar el pectoral."
 author: "Astro Learner"
 image: "/public/post-images/example.jpg"
 tags: ["astro", "blogging", "learning in public"]

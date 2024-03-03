@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Mejores ejercicios para quemar grasa"
+title: "Mejores ejercicios para favorecer la pérdida de grasa"
 date: 2024-03-03
-description: "Descubre los ejercicios más efectivos para perder grasa rápidamente"
+description: "Descubre los ejercicios más efectivos para perder grasa de forma continua, apta para principiantes e intermedios."
 author: "Fitness Guru"
 image: "/public/post-images/burning-fat.avif"
 tags: ["entrenamiento", "quemar grasa", "ejercicios"]

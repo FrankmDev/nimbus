@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Segundo articulo"
+title: "Alimentos que mejoraran tu metabolismo"
 date: 2022-07-01
-description: "Esto es un post sobre nutricion"
+description: "Estos son los diez mejores alimentos si quieres tener una dieta balanceada, y no morir en el intento."
 author: "Astro Learner"
 image: "https://imgcom.masterd.es/49/blog/2023/02/42534.jpeg"
 tags: ["astro", "blogging", "learning in public"]

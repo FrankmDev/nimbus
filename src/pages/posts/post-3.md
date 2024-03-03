@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Tercer articulo"
+title: "Principales consejos para una vida saludable."
 date: 2022-07-01
-description: "Esto es un post sobre salud"
+description: "Mejores hábitos y consejos para llevar a cabo una vida saludable y plena."
 author: "Astro Learner"
 image: "https://www.aseguravida.com/blog/img/EstadoSalud.png"
 tags: ["astro", "blogging", "learning in public"]
