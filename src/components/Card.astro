@@ -9,7 +9,7 @@ const { title, image, description, post, index, category } = Astro.props;
     <article class="card">
       <figure class="card__header">
         <img
-          src={post.frontmatter.image.url}
+          src={post.frontmatter.image}
           alt="card__image"
           class="card__image"
           width="600"

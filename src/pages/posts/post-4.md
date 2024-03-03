@@ -4,9 +4,7 @@ title: "Primer articulo"
 date: 2022-07-01
 description: "Esto es un post sobre entrenamiento"
 author: "Astro Learner"
-image:
-  url: "https://wallpapercave.com/wp/wp2613880.jpg"
-  alt: "The full Astro logo."
+image: "https://wallpapercave.com/wp/wp2613880.jpg"
 tags: ["astro", "blogging", "learning in public"]
 category: "Ejercicio"
 ---

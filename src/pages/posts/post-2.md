@@ -4,9 +4,7 @@ title: "Segundo articulo"
 date: 2022-07-01
 description: "Esto es un post sobre nutricion"
 author: "Astro Learner"
-image:
-  url: "https://imgcom.masterd.es/49/blog/2023/02/42534.jpeg"
-  alt: "The full Astro logo."
+image: "https://imgcom.masterd.es/49/blog/2023/02/42534.jpeg"
 tags: ["astro", "blogging", "learning in public"]
 category: "Nutrición"
 ---

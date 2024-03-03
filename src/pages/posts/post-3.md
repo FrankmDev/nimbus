@@ -4,9 +4,7 @@ title: "Tercer articulo"
 date: 2022-07-01
 description: "Esto es un post sobre salud"
 author: "Astro Learner"
-image:
-  url: "https://www.aseguravida.com/blog/img/EstadoSalud.png"
-  alt: "The full Astro logo."
+image: "https://www.aseguravida.com/blog/img/EstadoSalud.png"
 tags: ["astro", "blogging", "learning in public"]
 category: "Salud"
 ---
