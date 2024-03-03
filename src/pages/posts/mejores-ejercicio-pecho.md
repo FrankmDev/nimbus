@@ -7,6 +7,7 @@ author: "Astro Learner"
 image: "/public/post-images/example.jpg"
 tags: ["astro", "blogging", "learning in public"]
 category: "Ejercicio"
+slug: "mejores-ejercicio-pecho"
 ---
 
 # Mejor ejercicio de pecho

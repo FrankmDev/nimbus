@@ -10,7 +10,7 @@ const truncateDescr = (description: string): string => {
 ---
 
 <div class="card">
-  <a href={`/posts/post-${index + 1}/`} class="card-link">
+  <a href={`/posts/${post.frontmatter.slug}`} class="card-link">
     <div class="card-img-holder">
       <img src={post.frontmatter.image} alt="Blog image" />
     </div>

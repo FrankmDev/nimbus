@@ -7,6 +7,7 @@ author: "Fitness Guru"
 image: "/public/post-images/burning-fat.avif"
 tags: ["entrenamiento", "quemar grasa", "ejercicios"]
 category: "Ejercicio"
+slug: "mejor-quema-grasa"
 ---
 
 # Mejores ejercicios para quemar grasa

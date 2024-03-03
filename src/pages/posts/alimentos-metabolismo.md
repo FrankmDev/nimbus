@@ -7,6 +7,7 @@ author: "Astro Learner"
 image: "https://imgcom.masterd.es/49/blog/2023/02/42534.jpeg"
 tags: ["astro", "blogging", "learning in public"]
 category: "Nutrición"
+slug: "alimentos-metabolismo"
 ---
 
 # Plan de Nutrición Diario

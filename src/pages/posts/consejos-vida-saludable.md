@@ -7,6 +7,7 @@ author: "Astro Learner"
 image: "https://www.aseguravida.com/blog/img/EstadoSalud.png"
 tags: ["astro", "blogging", "learning in public"]
 category: "Salud"
+slug: "consejos-vida-saludable"
 ---
 
 # Hábitos para una Vida Saludable

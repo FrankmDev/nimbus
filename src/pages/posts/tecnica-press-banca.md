@@ -7,6 +7,7 @@ author: "Sleep Expert"
 image: "https://www.entrenamiento.com/wp-content/uploads/2016/06/press-de-banca.jpg"
 tags: ["salud", "sueño", "descanso"]
 category: "Ejercicio"
+slug: "tecnica-press-banca"
 ---
 
 # Guía completa sobre la técnica de press banca
