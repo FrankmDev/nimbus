@@ -9,9 +9,7 @@ const postDate = new Date(date);
 
 <Layout {title}>
   <section class="post-content">
-    <header
-      class="post-header w-full flex flex-col items-center justify-center"
-    >
+    <header class="post-header">
       <h1>{title}</h1>
       <p>
         por <a href={`/author/${author}`}>{author}</a> · {
@@ -23,28 +21,71 @@ const postDate = new Date(date);
         }
       </p>
     </header>
-    <p>{description}</p>
-    <Image src={image} alt="Imagen ejemplo" width="300" height="500" />
-
+    <div class="post-image">
+      <Image src={image} alt="Imagen del post" width="800" height="400" />
+    </div>
+    <div class="post-description">
+      <p>{description}</p>
+    </div>
     <div class="content">
       <slot />
     </div>
     <aside class="sidebar"></aside>
   </section>
 </Layout>
+
 <style>
   .post-content {
-    width: 55%;
-    max-width: 1300px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
+
   .post-header {
     background-color: #5908cb;
     border-radius: 1rem;
-    padding: 3rem;
-    width: 100%;
-  }
-  .post-header h1 {
-    font-size: 3rem;
+    padding: 1.5rem;
     text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .post-header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-header p {
+    font-size: 1rem;
+    color: #f0f0f0;
+  }
+
+  .post-image {
+    margin-bottom: 1.5rem;
+  }
+
+  .post-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .content {
+    margin-top: 2rem;
+  }
+
+  .content p {
+    color: red;
+  }
+  .sidebar {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
   }
 </style>
