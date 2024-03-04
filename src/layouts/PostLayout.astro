@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../../src/pages/posts/post.css";
 const { frontmatter } = Astro.props;
 import { Image } from "astro:assets";
 import Layout from "./Layout.astro";
@@ -84,7 +85,7 @@ const postDate = new Date(date);
     color: red;
   }
   .sidebar {
-    background-color: #f4f4f4;
+    background-color: #c71515;
     padding: 1.5rem;
     border-radius: 0.5rem;
   }
