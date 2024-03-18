@@ -1,40 +1,55 @@
 ---
-import { Image } from "astro:assets";
-import HeroImg from "../../../public/HeroImg.webp";
 import Cta from "../Cta";
 ---
 
 <section
   id="hero"
-  class="flex flex-col justify-between mx-auto px-4 max-w-[1300px] gap-10 mb-20"
+  class="relative flex flex-col justify-center items-center text-center mx-auto px-4 gap-10 mb-20 bg-hero"
 >
-  <div class="container flex items-center justify-between gap-8">
-    <div class="flex flex-col gap-3">
-      <h1 class="text-8xl font-bold text-balance">
-        Despierta tu<span class="highlight"> Potencial</span>
-      </h1>
-      <h2 class="text-lg mb-7">
-        <span class="highlight">Entrenamiento</span> y <span class="highlight"
-          >Nutrición</span
-        > : Optimiza tu Salud
-      </h2>
-      <Cta text="Contacto" />
-    </div>
-
-    <Image
-      src={HeroImg}
-      alt="Hero Image"
-      class="heroImg rounded-3xl object-cover overflow-hidden shadow-lg w-7/12"
-    />
-  </div>
+  <h1 class="text-8xl font-bold text-balance z-10">
+    Despierta tu<span class="highlight"> Potencial</span>
+  </h1>
+  <h2 class="text-lg mb-7 z-10">
+    <span class="highlight">Entrenamiento</span> y <span class="highlight"
+      >Nutrición</span
+    >: Optimiza tu Salud
+  </h2>
+  <Cta text="Contacto" />
 </section>
-
 <style>
-  @media (width<=1500px) {
-    .heroImg {
-      width: 38%;
-    }
-    .container {
+  #hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 0;
+    padding: 3rem 5rem;
+  }
+
+  #hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./HeroImg.avif");
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.75px);
+    z-index: -1;
+  }
+  #hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    z-index: -1;
+  }
+  @media (width <= 1500px) {
+    .hero-content {
       gap: 0rem;
     }
   }
