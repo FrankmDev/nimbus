@@ -24,7 +24,7 @@ const saludPosts = allPosts.filter(
 
 <section id="blog" class="section flex flex-col items-center justify-center">
   <h2 class="highlight">Posts recientes</h2>
-  <section class="posts grid grid-cols-3 gap-6 w-[85%]">
+  <section class="posts">
     {
       recentPosts.map((post) => (
         <Card key={post.frontmatter.slug} post={post} />
@@ -32,7 +32,7 @@ const saludPosts = allPosts.filter(
     }
   </section>
   <h2>Sobre <span class="highlight">Ejercicio</span></h2>
-  <section class="posts grid grid-cols-3 gap-6 w-[85%]">
+  <section class="posts">
     {
       ejercicioPosts.map((post) => (
         <Card key={post.frontmatter.slug} post={post} />
@@ -40,7 +40,7 @@ const saludPosts = allPosts.filter(
     }
   </section>
   <h2>Sobre <span class="highlight">Nutrición</span></h2>
-  <section class="posts grid grid-cols-3 gap-6 w-[85%]">
+  <section class="posts">
     {
       nutricionPosts.map((post) => (
         <Card key={post.frontmatter.slug} post={post} />
@@ -48,7 +48,7 @@ const saludPosts = allPosts.filter(
     }
   </section>
   <h2>Sobre <span class="highlight">Salud</span></h2>
-  <section class="posts grid grid-cols-3 gap-6 w-[85%]">
+  <section class="posts">
     {saludPosts.map((post) => <Card key={post.frontmatter.slug} post={post} />)}
   </section>
 </section>
@@ -56,5 +56,26 @@ const saludPosts = allPosts.filter(
 <style>
   h2 {
     font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    place-content: center;
+  }
+  @media (width<=1400px) {
+    .posts {
+    }
+  }
+  @media (width<=1200px) {
+    .posts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (width<=800px) {
+    .posts {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
