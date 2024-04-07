@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Los beneficios del ejercicio para la salud mental"
+title: "Mejores beneficios del ejercicio para la salud mental"
 date: 2024-03-03
-description: "Descubre cómo el ejercicio regular puede mejorar tu salud mental y emocional."
+description: "Descubre cómo el ejercicio regular ayuda a mejorar tu salud física, salud mental y emocional."
 author: "Saludable Vida"
 image: "/post-images/salud-mental.avif"
 tags: ["salud", "ejercicio", "bienestar"]
