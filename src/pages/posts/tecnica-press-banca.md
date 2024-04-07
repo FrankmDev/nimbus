@@ -4,7 +4,7 @@ title: "Claves para mejorar tu técnica de Press Banca"
 date: 2024-02-28
 description: "Aprende cómo mejorar tu técnica de Press Banca y evitar futuros dolores."
 author: "Sleep Expert"
-image: "https://www.entrenamiento.com/wp-content/uploads/2016/06/press-de-banca.jpg"
+image: "/post-images/press-banca.avif"
 tags: ["salud", "sueño", "descanso"]
 category: "Ejercicio"
 slug: "tecnica-press-banca"

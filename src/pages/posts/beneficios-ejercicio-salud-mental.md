@@ -4,7 +4,7 @@ title: "Los beneficios del ejercicio para la salud mental"
 date: 2024-03-03
 description: "Descubre cómo el ejercicio regular puede mejorar tu salud mental y emocional."
 author: "Saludable Vida"
-image: "https://ethic.es/wp-content/uploads/2023/07/salud-mental-1280x768.jpg"
+image: "/post-images/salud-mental.avif"
 tags: ["salud", "ejercicio", "bienestar"]
 category: "Salud"
 slug: "beneficios-ejercicio-salud-mental"

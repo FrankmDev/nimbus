@@ -4,7 +4,7 @@ title: "Mejores ejercicios para favorecer la pérdida de grasa"
 date: 2024-03-03
 description: "Descubre los ejercicios más efectivos para perder grasa de forma continua, apta para principiantes e intermedios."
 author: "Fitness Guru"
-image: "/public/post-images/burning-fat.avif"
+image: "/public/post-images/quema-grasa.avif"
 tags: ["entrenamiento", "quemar grasa", "ejercicios"]
 category: "Ejercicio"
 slug: "mejor-quema-grasa"

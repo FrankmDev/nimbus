@@ -4,7 +4,7 @@ title: "Principales consejos para una vida saludable."
 date: 2022-07-01
 description: "Mejores hábitos y consejos para llevar a cabo una vida saludable y plena."
 author: "Astro Learner"
-image: "https://www.aseguravida.com/blog/img/EstadoSalud.png"
+image: "/post-images/vida-saludable.avif"
 tags: ["astro", "blogging", "learning in public"]
 category: "Salud"
 slug: "consejos-vida-saludable"

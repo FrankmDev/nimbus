@@ -4,7 +4,7 @@ title: "Alimentos ricos en antioxidantes para una piel radiante"
 date: 2024-03-03
 description: "Descubre cómo una dieta rica en antioxidantes puede mejorar la salud de tu piel y ayudarte a lucir radiante."
 author: "NutriSalud"
-image: "https://www.foreo.com/es/blog/wp-content/uploads/2022/05/antioxidants.png"
+image: "/post-images/antioxidantes.avif"
 tags: ["nutrición", "piel", "antioxidantes"]
 category: "Nutrición"
 slug: "antioxidantes-piel"
