@@ -4,7 +4,7 @@ title: "Tres consejos para tener un descanso reparador"
 date: 2024-03-02
 description: "Aprende cómo mejorar la calidad de tu sueño y despertar sintiéndote más descansado y rejuvenecido"
 author: "Sleep Expert"
-image: "/public/post-images/descanso.avif"
+image: "/post-images/descanso.avif"
 tags: ["salud", "sueño", "descanso"]
 category: "Salud"
 slug: "descanso-reparador"

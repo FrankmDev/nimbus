@@ -4,7 +4,7 @@ title: "¿Cuáles son los mejores ejercicios de pecho?"
 date: 2024-02-28
 description: "Mejores ejercicios para incluir en un tu entrenamiento si quieres mejorar el pectoral."
 author: "Astro Learner"
-image: "/public/post-images/ejercicios-pecho.avif"
+image: "/post-images/ejercicios-pecho.avif"
 tags: ["astro", "blogging", "learning in public"]
 category: "Ejercicio"
 slug: "mejores-ejercicio-pecho"
