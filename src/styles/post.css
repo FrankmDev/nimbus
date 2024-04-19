@@ -1,0 +1,17 @@
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #f0d698;
+  font-weight: 900;
+}
+h2 {
+  color: #8b6db0;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 900;
+}
+
+ul li {
+  margin: 1rem 0;
+  list-style: square;
+}

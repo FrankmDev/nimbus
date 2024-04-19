@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/post.css";
 const { frontmatter } = Astro.props;
 import { Image } from "astro:assets";
 import Layout from "./Layout.astro";
@@ -10,8 +11,8 @@ const postDate = new Date(date);
 <Layout {title}>
   <section class="post-content">
     <header class="post-header">
-      <h1>{title}</h1>
-      <p>
+      <h1 class="title">{title}</h1>
+      <p class="header-description">
         por <a href={`/author/${author}`}>{author}</a> · {
           postDate.toLocaleDateString("es-ES", {
             year: "numeric",
@@ -21,15 +22,15 @@ const postDate = new Date(date);
         }
       </p>
     </header>
+    <div>
+      <p class="post-description postSubtitle text-center">{description}</p>
+    </div>
     <div class="post-image">
       <Image src={image} alt="Imagen del post" width="800" height="400" />
     </div>
-    <div class="post-description">
-      <p>{description}</p>
-    </div>
-    <div class="content">
+    <article class="content">
       <slot />
-    </div>
+    </article>
   </section>
 </Layout>
 
@@ -49,13 +50,13 @@ const postDate = new Date(date);
     margin-bottom: 2rem;
   }
 
-  .post-header h1 {
+  .title {
     font-size: 2.8rem;
     color: #fff;
     margin-bottom: 0.5rem;
   }
 
-  .post-header p {
+  .header-description {
     font-size: 1rem;
     color: #f0f0f0;
   }
@@ -65,21 +66,19 @@ const postDate = new Date(date);
   }
 
   .post-image img {
+    margin: 1.5rem 0;
     width: 100%;
     border-radius: 0.5rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
 
-  .post-description p {
-    font-size: 1.1rem;
+  .post-description {
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 
   .content {
     margin-top: 2rem;
-  }
-
-  .content p {
-    color: red;
+    line-height: 1.6;
   }
 </style>
