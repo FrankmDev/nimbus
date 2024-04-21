@@ -32,7 +32,7 @@ const saludPosts = allPosts.filter(
     }
   </section>
   <h2>Sobre <span class="highlight">Ejercicio</span></h2>
-  <section class="posts">
+  <section class="posts" id="ejercicio">
     {
       ejercicioPosts.map((post) => (
         <Card key={post.frontmatter.slug} post={post} />
@@ -40,7 +40,7 @@ const saludPosts = allPosts.filter(
     }
   </section>
   <h2>Sobre <span class="highlight">Nutrición</span></h2>
-  <section class="posts">
+  <section class="posts" id="nutricion">
     {
       nutricionPosts.map((post) => (
         <Card key={post.frontmatter.slug} post={post} />
@@ -48,7 +48,7 @@ const saludPosts = allPosts.filter(
     }
   </section>
   <h2>Sobre <span class="highlight">Salud</span></h2>
-  <section class="posts">
+  <section class="posts" id="salud">
     {saludPosts.map((post) => <Card key={post.frontmatter.slug} post={post} />)}
   </section>
 </section>

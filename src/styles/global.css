@@ -10,6 +10,7 @@ html {
   font-family: "Poppins", sans-serif;
   color: #f9f9f9;
   color-scheme: dark light;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -54,6 +55,7 @@ button {
   font-weight: 900;
   font-size: 125%;
 }
-#blog {
+section {
   scroll-behavior: smooth;
+  scroll-margin: 8rem;
 }
