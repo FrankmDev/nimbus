@@ -61,21 +61,31 @@ const saludPosts = allPosts.filter(
   .posts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     width: 90%;
     place-content: center;
   }
   @media (width<=1400px) {
     .posts {
+      gap: 0.2rem;
     }
   }
   @media (width<=1200px) {
     .posts {
       grid-template-columns: repeat(2, 1fr);
+      place-items: center;
     }
   }
   @media (width<=800px) {
     .posts {
+      width: 80%;
       grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+  @media (width<=700px) {
+    .posts {
+      width: 100%;
     }
   }
 </style>

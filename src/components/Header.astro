@@ -8,7 +8,7 @@ import Logo from "../../public/logo.avif";
   class="section flex items-center justify-between px-5 py-3 my-3"
 >
   <a href="/" class="flex items-center cursor-pointer">
-    <Image src={Logo} alt="My Fitness Blog Logo" class="w-40" />
+    <Image src={Logo} alt="My Fitness Blog Logo" class="logo w-40" />
   </a>
   <nav class="flex items-center gap-16">
     <a href="#ejercicio" class="nav-link">Ejercicio</a>
@@ -46,5 +46,19 @@ import Logo from "../../public/logo.avif";
   .nav-link:hover::before {
     width: 100%;
     left: 0;
+  }
+  @media (width<=1000px) {
+    #header {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .logo {
+      width: 12rem;
+    }
+  }
+  @media (width<=500px) {
+    .nav-link {
+      font-size: 90%;
+    }
   }
 </style>
