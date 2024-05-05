@@ -1,11 +1,13 @@
 :root {
   --main-color: #542ba4;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: "Poppins", sans-serif;
   color: #f9f9f9;
@@ -20,6 +22,7 @@ html {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Barlow Semi Condensed";
   src: url("/Barlow_Semi_Condensed/BarlowSemiCondensed-ExtraBold.ttf");
@@ -42,6 +45,7 @@ a,
 button {
   cursor: pointer;
 }
+
 .section {
   width: 100%;
   height: 100%;
@@ -49,12 +53,14 @@ button {
   margin-right: 3rem;
   margin-left: 3rem;
 }
+
 .highlight {
   font-family: "Barlow Semi Condensed", sans-serif;
   color: var(--main-color);
   font-weight: 900;
   font-size: 125%;
 }
+
 section {
   scroll-behavior: smooth;
   scroll-margin: 8rem;
