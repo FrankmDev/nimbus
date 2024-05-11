@@ -11,9 +11,19 @@ import Logo from "../../public/logo.avif";
     <Image src={Logo} alt="My Fitness Blog Logo" class="logo w-40" />
   </a>
   <nav class="flex items-center gap-16">
-    <a href="#ejercicio" class="nav-link">Ejercicio</a>
-    <a href="#nutricion" class="nav-link">Nutrición</a>
-    <a href="#salud" class="nav-link">Salud</a>
+    <ul>
+      <li>
+        <button class="dropdown relative inline-block">Blog</button>
+        <ul class="dropMenu hidden absolute z-10">
+          <li><a href="#ejercicio" class="nav-link">Ejercicio</a></li>
+          <li><a href="#nutricion" class="nav-link">Nutrición</a></li>
+          <li><a href="#salud" class="nav-link">Salud</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#contacto">Contacto</a>
+      </li>
+    </ul>
   </nav>
 </header>
 
@@ -26,8 +36,11 @@ import Logo from "../../public/logo.avif";
     font-size: 1.1rem;
     position: relative;
     z-index: 1;
+    display: block;
   }
-
+  .dropdown:hover .dropMenu {
+    display: block;
+  }
   .nav-link::before {
     content: "";
     width: 0;
@@ -56,10 +69,10 @@ import Logo from "../../public/logo.avif";
       width: 12rem;
     }
   }
-  
-  @media(width<=400px){
-    nav{
-      gap:1.8rem
+
+  @media (width<=400px) {
+    nav {
+      gap: 1.8rem;
     }
   }
 </style>
