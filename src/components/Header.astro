@@ -11,17 +11,30 @@ import Logo from "../../public/logo.avif";
     <Image src={Logo} alt="My Fitness Blog Logo" class="logo w-40" />
   </a>
   <nav class="flex items-center gap-16">
-    <ul>
+    <ul class="flex gap-12">
       <li>
-        <button class="dropdown relative inline-block">Blog</button>
-        <ul class="dropMenu hidden absolute z-10">
+        <button class="dropdown relative flex items-center justify-center gap-1"
+          >Blog<svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+            class="w-3"
+          >
+            <path
+              d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+              fill="#fff"></path></svg
+          ></button
+        >
+        <ul class="dropMenu absolute z-10">
           <li><a href="#ejercicio" class="nav-link">Ejercicio</a></li>
           <li><a href="#nutricion" class="nav-link">Nutrición</a></li>
           <li><a href="#salud" class="nav-link">Salud</a></li>
         </ul>
       </li>
       <li>
-        <a href="#contacto">Contacto</a>
+        <a class="nav-link" href=" #contacto">Contacto</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
       </li>
     </ul>
   </nav>
@@ -37,6 +50,9 @@ import Logo from "../../public/logo.avif";
     position: relative;
     z-index: 1;
     display: block;
+  }
+  .dropMenu {
+    display: none;
   }
   .dropdown:hover .dropMenu {
     display: block;
