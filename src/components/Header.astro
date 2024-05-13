@@ -10,10 +10,10 @@ import Logo from "../../public/logo.avif";
   <a href="/" class="flex items-center cursor-pointer">
     <Image src={Logo} alt="My Fitness Blog Logo" class="logo w-40" />
   </a>
-  <nav class="flex items-center gap-16">
-    <ul class="flex gap-12">
-      <li>
-        <button class="dropdown relative flex items-center justify-center gap-1"
+  <nav class="flex items-center gap-20">
+    <ul class="flex gap-16">
+      <li class='dropdown'>
+        <button class="relative flex items-center justify-center gap-1"
           >Blog<svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"
@@ -24,17 +24,17 @@ import Logo from "../../public/logo.avif";
               fill="#fff"></path></svg
           ></button
         >
-        <ul class="dropMenu absolute z-10">
+        <ul class="dropMenu absolute z-10 hidden">
           <li><a href="#ejercicio" class="nav-link">Ejercicio</a></li>
           <li><a href="#nutricion" class="nav-link">Nutrición</a></li>
           <li><a href="#salud" class="nav-link">Salud</a></li>
         </ul>
       </li>
       <li>
-        <a class="nav-link" href=" #contacto">Contacto</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
       </li>
       <li>
-        <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+        <a class="nav-link" href="#equipo">Equipo</a>
       </li>
     </ul>
   </nav>
@@ -51,8 +51,10 @@ import Logo from "../../public/logo.avif";
     z-index: 1;
     display: block;
   }
-  .dropMenu {
-    display: none;
+  .dropMenu{
+    background-color:#050505;
+    padding:1rem;
+    border-radius:.5rem;
   }
   .dropdown:hover .dropMenu {
     display: block;
