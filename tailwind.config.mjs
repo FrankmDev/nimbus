@@ -6,6 +6,10 @@ export default {
     colors: {
       main: "#542BA4",
     },
+    fontFamily: {
+      normal: ["Poppins", "sans-serif"],
+      highlight: ["Barlow Semi Condensed", "sans-serif"],
+    },
   },
   plugins: [],
 };

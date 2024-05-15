@@ -1,5 +1,5 @@
 ---
-
+import Band from "./Band.astro";
 ---
 
 <div
@@ -13,6 +13,13 @@
     Descubre los mejores artículos sobre Entrenamiento, Nutrición y Salud, para
     mejorar tanto tu estado físico como mental.
   </h3>
+  <section
+    class="bands flex justify-between my-9 py-6 px-14 bg-[var(--main-color)] w-[100%] rounded-md text-center"
+  >
+    <Band text="Clientes activos" number="65" />
+    <Band text="Cambios logrados" number="1500" />
+    <Band text="Satisfacción" number="96%" />
+  </section>
 </div>
 <style>
   #hero {
@@ -27,12 +34,22 @@
       gap: 0rem;
     }
   }
+  @media (width<=1200px) {
+    .bands {
+      padding: 0.5rem 1rem;
+      font-size: 80%;
+    }
+  }
   @media (width<=1150px) {
     h1 {
       font-size: 5rem;
     }
     h3 {
       font-size: 1rem;
+    }
+    .bands {
+      flex-direction: column;
+      gap: 1rem;
     }
   }
   @media (width<=500px) {
