@@ -1,33 +1,63 @@
 ---
+import ListPricing from "./ListPricing.astro";
+const { price } = Astro.props;
 
+const advantagesFirst = ["Hello", "Hola", "Hola", "Juas"];
 ---
 
-<div class="flex flex-col bg-black rounded-3xl">
-  <div class="px-6 py-8 sm:p-10 sm:pb-6">
-    <div class="grid items-center justify-center w-full grid-cols-1 text-left">
-      <div>
-        <h2 class="text-lg font-medium tracking-tighter text-white lg:text-3xl">
-          Corporate
-        </h2>
-        <p class="mt-2 text-sm text-gray-100">Grow steadily and pizza.</p>
-      </div>
-      <div class="mt-6">
-        <p>
-          <span class="text-5xl font-light tracking-tight text-white">
-            $35
-          </span>
-          <span class="text-base font-medium text-white"> /mo </span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="flex px-6 pb-8 sm:px-8">
-    <a
-      aria-describedby="tier-starter"
-      class="items-center justify-center w-full px-6 py-2.5 text-center text-black duration-200 bg-white border-2 border-white rounded-full nline-flex hover:bg-transparent hover:border-white hover:text-white focus:outline-none focus-visible:outline-white text-sm focus-visible:ring-white"
-      href="#"
-    >
-      Get started
-    </a>
-  </div>
+<div class="card">
+  <p class="price">$ {price}</p>
+  <ul class="lists">
+    <ListPricing />
+  </ul>
+  <a href="#" class="action"> Apuntarme </a>
 </div>
+<style>
+  .card {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 1.5rem;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .price {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .lists {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 0.75rem;
+    row-gap: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+  }
+  .action {
+    margin-top: 2rem;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0.625rem 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 1);
+    outline: none;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .action:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+  }
+</style>
