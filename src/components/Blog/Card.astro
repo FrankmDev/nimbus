@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import "../styles/global.css";
+import "../../styles/global.css";
 const { title, image, description, post, index, category } = Astro.props;
 const truncateDescr = (description: string): string => {
   return description.length > 100
