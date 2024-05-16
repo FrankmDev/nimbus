@@ -6,8 +6,16 @@ const advantageSec = ["Bye", "Adios", "Hello"];
 const advantageThird = ["Probando", "Esto", "Si", "Funcione"];
 ---
 
-<section class="w-full items-start justify-center flex gap-5">
-  <CardPricing price="30" advantageArr={advantageFirst} />
-  <CardPricing price="40" advantageArr={advantageSec} />
-  <CardPricing price="50" advantageArr={advantageThird} />
+<section class="flex flex-col gap-5 items-center justify-center">
+  <h2 class="text-5xl font-highlight my-6">Tarifas</h2>
+  <p>
+    Descubre nuestras diferentes opciones de precio y disfruta de todas las
+    ventajas que te ofrecen, además de recibir regalos mensuales para aumentar
+    tus ganancias.
+  </p>
+  <div class="w-full items-start justify-center flex gap-5">
+    <CardPricing price="30" advantageArr={advantageFirst} />
+    <CardPricing price="40" advantageArr={advantageSec} />
+    <CardPricing price="50" advantageArr={advantageThird} />
+  </div>
 </section>
