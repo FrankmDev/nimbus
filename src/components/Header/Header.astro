@@ -1,15 +1,18 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "../../../public/logo.avif";
+import Logo from "/public/Nimbus-Logo.avif";
 import Cta from "./Cta.astro";
 ---
 
-<header id="header" class="section flex items-center justify-between px-5 py-3">
+<header id="header" class="section flex items-center justify-between px-5">
   <a href="/" class="flex items-center cursor-pointer">
-    <Image src={Logo} alt="My Fitness Blog Logo" class="logo w-40" />
+    <Image src={Logo} alt="My Fitness Blog Logo" class="logo w-48" />
   </a>
-  <nav class="flex items-center gap-20">
+  <nav class="flex items-center gap-20 translate-y-3">
     <ul class="flex gap-16">
+      <li>
+        <a class="nav-link" href="#features">Características</a>
+      </li>
       <li class="dropdown">
         <button
           class="text-[1.1rem] relative flex items-center justify-center gap-1"
@@ -32,9 +35,6 @@ import Cta from "./Cta.astro";
       <li>
         <a class="nav-link" href="#pricing">Pricing</a>
       </li>
-      <li>
-        <a class="nav-link" href="#contacto">Contacto</a>
-      </li>
     </ul>
   </nav>
   <Cta />
@@ -43,7 +43,7 @@ import Cta from "./Cta.astro";
 <style>
   #header {
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     border-bottom: 2px solid #532ba423;
     background-color: #02020b;
     border-radius: 1rem 1rem 0 0;

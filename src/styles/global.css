@@ -58,7 +58,7 @@ button {
   font-family: "Barlow Semi Condensed", sans-serif;
   color: var(--main-color);
   font-weight: 900;
-  font-size: 125%;
+  text-align: center;
 }
 
 section {
