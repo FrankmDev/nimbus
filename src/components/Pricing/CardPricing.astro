@@ -5,17 +5,22 @@ const { price, advantageArr } = Astro.props;
 ---
 
 <div class="card">
-  <p class="price">$ {price}</p>
-  <ul class="lists">
-    {advantageArr.map((advantage) => <ListPricing advantage={advantage} />)}
-  </ul>
+  <div>
+    <p class="price">$ {price}</p>
+    <ul class="lists">
+      {advantageArr.map((advantage) => <ListPricing advantage={advantage} />)}
+    </ul>
+  </div>
   <a href="#" class="action"> Apuntarme </a>
 </div>
 <style>
   .card {
-    max-width: 320px;
+    width: 400px;
+    height: 25rem;
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 1.5rem;
     background-color: rgba(0, 0, 0, 1);
     padding: 1.5rem;
@@ -23,7 +28,8 @@ const { price, advantageArr } = Astro.props;
   }
 
   .price {
-    font-size: 3rem;
+    font-size: 3.2rem;
+    margin-top: 0.5rem;
     line-height: 1;
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
@@ -33,8 +39,8 @@ const { price, advantageArr } = Astro.props;
     margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
-    grid-row-gap: 0.75rem;
-    row-gap: 0.75rem;
+    grid-row-gap: 0.5rem;
+    row-gap: 0.5rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: rgba(255, 255, 255, 1);
