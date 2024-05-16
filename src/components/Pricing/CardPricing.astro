@@ -1,14 +1,13 @@
 ---
 import ListPricing from "./ListPricing.astro";
-const { price } = Astro.props;
 
-const advantagesFirst = ["Hello", "Hola", "Hola", "Juas"];
+const { price, advantageArr } = Astro.props;
 ---
 
 <div class="card">
   <p class="price">$ {price}</p>
   <ul class="lists">
-    <ListPricing />
+    {advantageArr.map((advantage) => <ListPricing advantage={advantage} />)}
   </ul>
   <a href="#" class="action"> Apuntarme </a>
 </div>
