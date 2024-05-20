@@ -12,18 +12,21 @@ allPosts.sort((a, b) => {
 const recentPosts = allPosts.slice(allPosts.length - 3);
 
 const ejercicioPosts = allPosts.filter(
-  (post) => post.frontmatter.category === "Ejercicio"
+  (post) => post.frontmatter.category === "Ejercicio",
 );
 const nutricionPosts = allPosts.filter(
-  (post) => post.frontmatter.category === "Nutrición"
+  (post) => post.frontmatter.category === "Nutrición",
 );
 const saludPosts = allPosts.filter(
-  (post) => post.frontmatter.category === "Salud"
+  (post) => post.frontmatter.category === "Salud",
 );
 ---
 
 <section id="blog" class="section flex flex-col items-center justify-center">
-  <h2 class="highlight">Posts recientes</h2>
+  <h2 class="text-6xl text-center font-highlight">
+    Consulta nuestros artículos
+  </h2>
+  <h3 class="blog-category">Posts recientes</h3>
   <section class="posts">
     {
       recentPosts.map((post) => (
@@ -31,7 +34,7 @@ const saludPosts = allPosts.filter(
       ))
     }
   </section>
-  <h2 class="highlight">Sobre Ejercicio</h2>
+  <h3 class="blog-category">Sobre Ejercicio</h3>
   <section class="posts" id="ejercicio">
     {
       ejercicioPosts.map((post) => (
@@ -39,7 +42,7 @@ const saludPosts = allPosts.filter(
       ))
     }
   </section>
-  <h2 class="highlight">Sobre Nutrición</h2>
+  <h3 class="blog-category">Sobre Nutrición</h3>
   <section class="posts" id="nutricion">
     {
       nutricionPosts.map((post) => (
@@ -47,16 +50,18 @@ const saludPosts = allPosts.filter(
       ))
     }
   </section>
-  <h2 class="highlight">Sobre Salud</h2>
+  <h3 class="blog-category">Sobre Salud</h3>
   <section class="posts" id="salud">
     {saludPosts.map((post) => <Card key={post.frontmatter.slug} post={post} />)}
   </section>
 </section>
 
 <style>
-  h2 {
-    font-size: 2.3rem;
+  .blog-category {
+    font-size: 1.8rem;
     margin: 3rem 0;
+    font-weight: 900;
+    color: #faf2a1;
   }
   .posts {
     display: grid;
