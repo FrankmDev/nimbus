@@ -15,7 +15,7 @@ import Band from "./Band.astro";
     mental.
   </h3>
   <section
-    class="bands flex justify-between my-10 py-6 px-14 bg-[var(--main-color)] w-[90%] rounded-xl text-center"
+    class="bands flex justify-between my-10 py-6 px-14 bg-[var(--main-color)] w-[90%] rounded-3xl text-center"
   >
     <Band text="Clientes activos" number="65" />
     <Band text="Cambios logrados" number="1500" />
@@ -35,7 +35,7 @@ import Band from "./Band.astro";
   @media (width<=1200px) {
     .bands {
       padding: 0.5rem 1rem;
-      font-size: 80%;
+      font-size: 90%;
     }
   }
   @media (width<=1150px) {
@@ -46,8 +46,12 @@ import Band from "./Band.astro";
       font-size: 1rem;
     }
     .bands {
-      flex-direction: column;
-      gap: 1rem;
+      padding: 0.5rem 2rem;
+    }
+  }
+  @media (width<=1000px) {
+    .bands {
+      font-size: 0.65rem;
     }
   }
   @media (width<=500px) {
@@ -64,6 +68,14 @@ import Band from "./Band.astro";
     h3 {
       width: 100%;
       margin: 0;
+    }
+  }
+  @media (width<=800px) {
+    .bands {
+      flex-direction: column;
+      gap: 1.2rem;
+      font-size: 0.8rem;
+      max-width: 350px;
     }
   }
 </style>

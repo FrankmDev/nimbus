@@ -4,7 +4,7 @@
 
 <section id="features" class="section flex flex-col gap-10">
   <h2 class="text-5xl text-center font-highlight">¿Qué ofrecemos?</h2>
-  <div class="my-10 flex justify-between items-center w-[90%] mx-auto">
+  <div class="container my-10 flex justify-between items-start w-[90%] mx-auto">
     <div class="feature">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -65,10 +65,10 @@
     gap: 0.75rem;
     border-radius: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     padding: 1rem;
     max-width: 19rem;
-    height: 20rem;
+    height: fit-content;
     cursor: pointer;
     transition: all 0.2s;
   }
@@ -89,12 +89,40 @@
   }
 
   p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #bababa;
     text-align: center;
   }
   .icon {
     width: 3.5rem;
     fill: #f0f0f0;
+  }
+  @media (width<=1200px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  @media (width<=1000px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media (width<=650px) {
+    .container {
+      grid-template-columns: 1fr;
+      place-items: center;
+      padding: 0;
+    }
   }
 </style>
