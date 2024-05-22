@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  background-color: #040404;
+  background-color: #080808;
   letter-spacing: 0.1rem;
   gap: 2.2rem;
   display: flex;
@@ -43,9 +43,6 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  overflow: hidden;
-}
 
 a,
 button {
