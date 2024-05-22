@@ -1,5 +1,5 @@
 :root {
-  --main-color: #8b5fbf;
+  --main-color: #8b6db0;
 }
 
 * {
@@ -13,6 +13,7 @@ html {
   color: #f9f9f9;
   color-scheme: dark light;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -39,6 +40,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
 }
 
 a,
