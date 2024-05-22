@@ -6,12 +6,12 @@ import Logo from "/public/Nimbus-Logo.avif";
 <footer class="bg-gray-900 w-[70%]">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
-      <div class="mb-6 md:mb-0">
-        <a href="/" class="flex items-center">
-          <Image src={Logo} class="w-56 me-3" alt="Nimbus Logo" />
+      <div class="mb-6 md:mb-0 ">
+        <a href="/" class="flex items-center sm:items-center sm:justify-center">
+          <Image src={Logo} class="w-56 me-3 logo " alt="Nimbus Logo" />
         </a>
       </div>
-      <div class="flex gap-20 sm:gap-16">
+      <div class="flex gap-20 sm:gap-16 sm:justify-center">
         <div>
           <h2 class="mb-6 text-sm uppercase">Contacto</h2>
           <ul>
@@ -121,5 +121,26 @@ import Logo from "/public/Nimbus-Logo.avif";
   .icon:hover {
     fill: var(--main-color);
     transform: scale(1.2);
+  }
+  @media(width<=1200px){
+    footer{
+      font-size:90%;
+    }
+  }
+  @media(width<=950px){
+    footer{
+      font-size:80%;
+    }
+    .logo{
+      width:10rem;
+    }
+  }
+  @media(width<=800px){
+    .container{
+      gap:.5rem;
+    }
+    .logo{
+      width:12rem;
+    }
   }
 </style>

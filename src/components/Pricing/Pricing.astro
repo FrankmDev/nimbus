@@ -18,7 +18,7 @@ const advantageThird = [...advantageSec, "Asesoramiento online"];
     ventajas que te ofrecen, además de recibir regalos mensuales para aumentar
     tus ganancias.
   </p>
-  <div class="my-6 w-2/3 items-start justify-between flex gap-5">
+  <div class="container my-6 w-2/3 items-start justify-between flex gap-5">
     <CardPricing price="30" advantageArr={advantageFirst} />
     <CardPricing price="40" advantageArr={advantageSec} />
     <CardPricing price="50" advantageArr={advantageThird} />
@@ -27,5 +27,21 @@ const advantageThird = [...advantageSec, "Asesoramiento online"];
 <style>
   p {
     color: #bababa;
+  }
+  @media(width<=1100px){
+   .container{
+      width:80%;
+    }
+  }
+  @media(width<=900px){
+    .container{
+      width:90%; 
+    }
+  }
+  @media(width<=780px){
+    .container{
+      flex-direction:column;
+      align-items:center;
+    }
   }
 </style>
