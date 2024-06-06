@@ -1,5 +1,39 @@
 ---
-
+// crea un carousel con un slider para cada testimonio en base a un array de datos
+const TESTIMONIALS = [
+  {
+    name: "John Doe",
+    img: "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+    description:
+      "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.",
+  },
+  {
+    name: "Jane Doe",
+    img: "https://t3.ftcdn.net/jpg/04/60/91/88/360_F_460918802_XVCymFr7MoziFpnInbTDvrlblYhvAOi2.jpg",
+    description:
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+  },
+  {
+    name: "Maria Doe",
+    img: "https://www.deluxeweb.co.uk/wp-content/uploads/headshot-photo.jpg",
+    description:
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+  },
+];
 ---
 
-<h1 class="title">HOLA</h1>
+{
+  TESTIMONIALS.map((testimonial) => (
+    <div class="flex flex-col items-center justify-center border-2 border-gray-200 p-4 rounded-3xl">
+      <div class="flex flex-col items-center justify-center">
+        <img
+          src={testimonial.img}
+          class="size-16 object-cover rounded-full"
+          alt="Avatar"
+        />
+        <p class="text-2xl font-bold">{testimonial.name}</p>
+      </div>
+      <p class="text-lg">{testimonial.description}</p>
+    </div>
+  ))
+}
