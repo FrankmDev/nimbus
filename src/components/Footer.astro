@@ -1,14 +1,13 @@
 ---
-import { Image } from "astro:assets";
-import Logo from "/public/Nimbus-Logo.avif";
+import Logo from "./Logo.astro";
 ---
 
 <footer class="bg-gray-900 w-[70%]">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
-      <div class="mb-6 md:mb-0 ">
+      <div class="mb-6 md:mb-0">
         <a href="/" class="flex items-center sm:items-center sm:justify-center">
-          <Image src={Logo} class="w-56 me-3 logo " alt="Nimbus Logo" />
+          <Logo />
         </a>
       </div>
       <div class="flex gap-20 sm:gap-16 sm:justify-center">
@@ -122,25 +121,25 @@ import Logo from "/public/Nimbus-Logo.avif";
     fill: var(--main-color);
     transform: scale(1.2);
   }
-  @media(width<=1200px){
-    footer{
-      font-size:90%;
+  @media (width<=1200px) {
+    footer {
+      font-size: 90%;
     }
   }
-  @media(width<=950px){
-    footer{
-      font-size:80%;
+  @media (width<=950px) {
+    footer {
+      font-size: 80%;
     }
-    .logo{
-      width:10rem;
+    .logo {
+      width: 10rem;
     }
   }
-  @media(width<=800px){
-    .container{
-      gap:.5rem;
+  @media (width<=800px) {
+    .container {
+      gap: 0.5rem;
     }
-    .logo{
-      width:12rem;
+    .logo {
+      width: 12rem;
     }
   }
 </style>

@@ -1,12 +1,11 @@
 ---
-import { Image } from "astro:assets";
-import Logo from "/public/Nimbus-Logo.avif";
 import Cta from "./Cta.astro";
+import Logo from "../Logo.astro";
 ---
 
 <header id="header" class="section flex items-center justify-between px-5">
   <a href="/" class="flex items-center cursor-pointer">
-    <Image src={Logo} alt="My Fitness Blog Logo" class="logo w-48" />
+    <Logo />
   </a>
   <div class="flex gap-20 navigation">
     <nav class="flex items-center gap-20">
@@ -194,12 +193,6 @@ import Cta from "./Cta.astro";
     .nav-link,
     .dropdown button {
       font-size: 1.2rem;
-    }
-  }
-  @media (width<=550px) {
-    #header {
-      width: 95vw;
-      left: calc((100% - 95vw) / 2);
     }
   }
 </style>
