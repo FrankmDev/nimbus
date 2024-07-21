@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --main-color: '#8b6db0';
+    --main-color: "#8b6db0";
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -38,6 +38,7 @@
   }
 
   .dark {
+    --main-color: #8b6db0;
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
@@ -121,7 +122,6 @@ body {
   overflow-x: hidden;
 }
 
-
 a,
 button {
   cursor: pointer;
@@ -137,7 +137,7 @@ button {
 
 .highlight {
   font-family: "Barlow Semi Condensed", sans-serif;
-  color: var(--main-color);
+  color: #8b6db0;
   font-weight: 900;
   text-align: center;
 }
